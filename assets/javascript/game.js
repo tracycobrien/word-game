@@ -169,7 +169,7 @@ document.onkeyup = function (event) {
         if (correctGuesses >= computerWord.length) {
             finalMessage = computerWord + ": YOU WIN!!!!!";
             // --Show horse picture.
-            finalImage = "<img id='horseBreed' src='./assets/images/" + computerWord + ".jpg'>";
+            finalImage = "<img id='horseBreed' src='./assets/images/" + computerWord.toLowerCase() + ".jpg'>";
             // --Add one to number of wins.
             wins++;
             // --Set indicator for game over, to be used later.
